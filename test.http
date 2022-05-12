@@ -1,0 +1,445 @@
+### Get All Products
+GET http://localhost:4000/api/products HTTP/1.1
+content-type: application/json
+
+
+
+
+
+
+
+
+
+
+
+
+### User
+POST http://localhost:3000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+  "password": "1"
+}
+
+### get user by accessToken
+
+GET http://localhost:3000/api/auth/user HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+
+
+### Team Count
+GET http://localhost:3000/api/options/team-count HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+PUT http://localhost:3000/api/options/team-count HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "teamCount": 10
+}
+
+
+
+### Team Password
+
+### get all
+GET http://localhost:3000/api/team-password/all HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+### update
+PUT http://localhost:3000/api/team-password HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "teamPasswords": [
+    {
+      "team": 1,
+      "password": 11
+    },
+    {
+      "team": 2,
+      "password": 22
+    }
+  ]
+}
+
+
+### reset
+GET http://localhost:3000/api/team-password/reset HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+### Options
+
+GET http://localhost:3000/api/options HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+### change admin password
+PUT http://localhost:3000/api/options/admin-password HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "password": "123456"
+}
+
+### get admin password
+
+GET http://localhost:3000/api/options/admin-password HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+
+### get can-submit-descrypted-sentence
+
+GET http://localhost:3000/api/options/can-submit-descrypted-sentence HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+### update can-submit-descrypted-sentence
+
+PUT http://localhost:3000/api/options/can-submit-descrypted-sentence HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "status": "yes"
+}
+
+### get puzzle count
+GET http://localhost:3000/api/options/puzzle-count HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+### update puzzle count
+PUT http://localhost:3000/api/options/puzzle-count HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "puzzleCount": 30
+}
+
+### get puzzle message
+GET http://localhost:3000/api/options/original-puzzle-message HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+### update puzzle message
+PUT http://localhost:3000/api/options/puzzle-message HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "message": "우리는 우리는 우리는 우리는"
+}
+
+### get last puzzle video url
+GET http://localhost:3000/api/options/last-puzzle-video-url HTTP/1.1
+content-type: application/json
+
+### update last puzzle video url
+PUT http://localhost:3000/api/options/last-puzzle-video-url HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "videoUrl": "yesyes"
+}
+
+### get can-open-last-puzzle
+GET http://localhost:3000/api/options/can-open-last-puzzle HTTP/1.1
+content-type: application/json
+
+### update can-open-last-puzzle
+PUT http://localhost:3000/api/options/can-open-last-puzzle HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "status": "yes"
+}
+
+### get is-running-timer
+GET http://localhost:3000/api/options/is-running-timer HTTP/1.1
+content-type: application/json
+
+### update is-running-timer
+PUT http://localhost:3000/api/options/is-running-timer HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "status": "yes"
+}
+
+###
+
+### get laptime
+GET http://localhost:3000/api/options/lap-time HTTP/1.1
+content-type: application/json
+
+### update laptime
+PUT http://localhost:3000/api/options/lap-time HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "lapTime": 2200
+}
+
+###
+
+GET http://localhost:3000/api/options/company-image HTTP/1.1
+content-type: application/json
+
+
+
+
+
+### Timer
+
+### get timer
+GET http://localhost:3000/api/timer/1 HTTP/1.1
+content-type: application/json
+
+### get all timer
+
+GET http://localhost:3000/api/timer/all HTTP/1.1
+content-type: application/json
+
+
+### update timer
+
+PUT http://localhost:3000/api/timer/2 HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "startTime": "2022-01-21T04:10:18.120"
+}
+
+### start timer
+POST http://localhost:3000/api/timer HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+### stop timer
+PUT http://localhost:3000/api/timer/stop HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "team": 6
+}
+
+### reset timer
+PUT http://localhost:3000/api/timer/reset HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+
+### PUZZLE
+
+### open puzzle
+PUT http://localhost:3000/api/puzzle/open HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "team": 1,
+  "boxKey": "0:0"
+}
+
+### reset puzzle
+PUT http://localhost:3000/api/puzzle/reset HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+### get open puzzle boxes
+GET http://localhost:3000/api/puzzle/2 HTTP/1.1
+content-type: application/json
+
+### Puzzle - Get all
+GET http://localhost:3000/api/puzzle/all HTTP/1.1
+content-type: application/json
+
+### Puzzle - Descrypy Sentence
+POST http://localhost:3000/api/puzzle/descrypt-sentence HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "team": 4,
+  "sentence": "hi"
+}
+
+
+### Point - Get
+GET http://localhost:3000/api/team-point HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+### TeamPoint
+
+### get team point
+GET http://localhost:3000/api/team-point/1 HTTP/1.1
+content-type: application/json
+
+### get all team points
+GET http://localhost:3000/api/team-point/all HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+### update team point
+PUT http://localhost:3000/api/team-point HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "teamPoints": [
+    {
+      "team": 1,
+      "point": 10000,
+      "pointType": "usable",
+    },
+    {
+      "team": 2,
+      "point": 2000,
+      "pointType": "usable"
+    },
+    {
+      "team": 3,
+      "point": 2300,
+      "pointType": "timer"
+    },
+    {
+      "team": 4,
+      "point": 6200,
+      "pointType": "sentenceDecryption"
+    },
+    {
+      "team": 5,
+      "point": 100,
+      "pointType": "bingo"
+    }
+  ]
+}
+
+### reset team points
+PUT http://localhost:3000/api/team-point/reset HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+
+
+
+
+### Point Table
+
+### get point table
+GET http://localhost:3000/api/point-table HTTP/1.1
+content-type: application/json
+
+### get point table item
+GET http://localhost:3000/api/point-table/timer-plus HTTP/1.1
+content-type: application/json
+
+{
+  "point": 1100
+}
+
+### get upload point
+GET http://localhost:3000/api/point-table/upload HTTP/1.1
+content-type: application/json
+
+### update upload point
+PUT http://localhost:3000/api/point-table/upload HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "point": 1200
+}
+
+### get open box point
+GET http://localhost:3000/api/point-table/open-box-cost HTTP/1.1
+content-type: application/json
+
+### update open box point
+PUT http://localhost:3000/api/point-table/open-box-cost HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "point": 100
+}
+
+### get open box filled
+GET http://localhost:3000/api/point-table/open-letter-box HTTP/1.1
+content-type: application/json
+
+### update open box filled point
+PUT http://localhost:3000/api/point-table/open-letter-box HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "point": 1200
+}
+
+### reset
+PUT http://localhost:3000/api/point-table/reset HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+
+
+
+### Statistics
+
+### get statistics
+GET http://localhost:3000/api/statistics HTTP/1.1
+content-type: application/json
+
+
+
+
+
+
+### Mission Upload
+PUT http://localhost:3000/api/mission-upload/reset HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}
+
+
+
+
+### Reset
+PUT http://localhost:3000/api/reset HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{token}}

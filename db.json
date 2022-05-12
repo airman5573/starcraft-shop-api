@@ -1,0 +1,143 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "A",
+			"price": 50,
+			"stock": 100,
+			"thumbnail_url": "http://localhost:4000/images/Protoss_ArbiterTribunal.png"
+		},
+		{
+			"id": 2,
+			"name": "B",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Protoss_Assimilator.png"
+		},
+    {
+			"id": 3,
+			"name": "C",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Protoss_CitadelofAdun.png"
+		},
+    {
+			"id": 4,
+			"name": "A",
+			"price": 50,
+			"stock": 100,
+			"thumbnail_url": "http://localhost:4000/images/Protoss_Gateway.png"
+		},
+		{
+			"id": 5,
+			"name": "B",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Protoss_Nexus.png"
+		},
+    {
+			"id": 6,
+			"name": "C",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Protoss_Pylon.png"
+		},
+    {
+			"id": 7,
+			"name": "A",
+			"price": 50,
+			"stock": 100,
+			"thumbnail_url": "http://localhost:4000/images/Protoss_RoboticsBay.png"
+		},
+		{
+			"id": 8,
+			"name": "B",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Protoss_Stargate.png"
+		},
+    {
+			"id": 9,
+			"name": "C",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Protoss_TemplarArchive.png"
+		},
+    {
+			"id": 10,
+			"name": "A",
+			"price": 50,
+			"stock": 100,
+			"thumbnail_url": "http://localhost:4000/images/Terran_Academy.png"
+		},
+		{
+			"id": 11,
+			"name": "B",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Terran_Armory.png"
+		},
+    {
+			"id": 12,
+			"name": "C",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Terran_Comsat.png"
+		},
+    {
+			"id": 13,
+			"name": "A",
+			"price": 50,
+			"stock": 100,
+			"thumbnail_url": "http://localhost:4000/images/Terran_ControlTower.png"
+		},
+		{
+			"id": 14,
+			"name": "B",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Terran_Factory.png"
+		},
+    {
+			"id": 15,
+			"name": "C",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Terran_MissileTurret.png"
+		},		{
+			"id": 16,
+			"name": "A",
+			"price": 50,
+			"stock": 100,
+			"thumbnail_url": "http://localhost:4000/images/Terran_NuclearSilo.png"
+		},
+		{
+			"id": 17,
+			"name": "B",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Terran_PhysicsLab.png"
+		},
+    {
+			"id": 18,
+			"name": "C",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Terran_Refinery.png"
+		},
+    {
+			"id": 19,
+			"name": "A",
+			"price": 50,
+			"stock": 100,
+			"thumbnail_url": "http://localhost:4000/images/Terran_Starport.png"
+		},
+		{
+			"id": 20,
+			"name": "B",
+			"price": 100,
+			"stock": 50,
+			"thumbnail_url": "http://localhost:4000/images/Terran_SupplyDepo.png"
+		}
+	]
+}
